@@ -33,7 +33,7 @@ export default class AddForm extends React.Component {
     }
     render() {
         return  <div className="addForm">
-                    <div className="title"><span>新增</span><span className="close" onClick={()=> {this.props.getShow(false)}}>*</span></div>
+                    <div className="title"><span>新增</span><span className="close" onClick={()=> {this.props.getShow(false)}}>×</span></div>
                     <div className="content">
                         <div><label>名称：<input type="text" id="name"/></label></div>
                         <div><label>年龄：<input type="text" id="age"/></label></div>
@@ -46,19 +46,7 @@ export default class AddForm extends React.Component {
                     </div>
                 </div>
     }
-    render() {
-        return  <div className="addForm">
-                    <div className="title"><span>编辑</span><span className="close" onClick={()=> {this.props.getShow(false)}}>*</span></div>
-                    <div className="content">
-                        <div><label>名称：<input type="text" id="name"/></label></div>
-                        <div><label>年龄：<input type="text" id="age"/></label></div>
-                        <div><label>身高：<input type="text" id="height"/></label></div>
-                        <div><label>爱好：<input type="text" id="hobby"/></label></div>
-                    </div>
-                    <div className="operate">
-                        <button onClick={()=> {this.props.getShow(false)}}>取消</button>
-                        <button onClick={this.getMessage}>确定</button>
-                    </div>
-                </div>
-    }
+    
+    
+
 }

@@ -13,8 +13,8 @@ export default class TableList extends React.Component {
     }
     //编辑修改
     editInfo = (id) => {
-        let list = JSON.parse(localStorage.getItem('info')||'[]')
-
+        let list = JSON.parse(localStorage.getItem('info')||'[]');
+        console.log(list)
     }
     //删除
     deleteItem = (id) => {

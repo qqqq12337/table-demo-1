@@ -1,49 +1,49 @@
 .addForm {
-    width: 420px;
-    height: 280px;
-    position: absolute;
-    background-color: #fff;
-    color: #444;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 999;
+  width: 420px;
+  height: 280px;
+  position: absolute;
+  background-color: #fff;
+  color: #444;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 999;
 }
 
 .addForm .title {
-    padding: 20px;
-    border-bottom: 1px solid rgba(242, 242, 242);
+  padding: 20px;
+  border-bottom: 1px solid rgba(242, 242, 242);
 }
 
 .addForm .close {
-    float: right;
+  float: right;
 }
 
 .addForm .content {
-    padding: 0 40px;
+  padding: 0 40px;
 }
 
 .addForm .content div {
-    margin-top: 16px;
-    font-size: 14px;
+  margin-top: 16px;
+  font-size: 14px;
 }
 
 .addForm .operate {
-    text-align: right;
-    margin-top: 30px;
-    padding-right: 20px;
-    border-top: 1px solid rgba(242, 242, 242);
+  text-align: right;
+  margin-top: 30px;
+  padding-right: 20px;
+  border-top: 1px solid rgba(242, 242, 242);
 }
 
 .addForm .operate button {
-    width: 74px;
-    height: 30px;
-    border-radius: 4px;
-    margin-top: 4px;
+  width: 74px;
+  height: 30px;
+  border-radius: 4px;
+  margin-top: 4px;
 }
 
 .addForm .operate button:last-child {
-    background-color: rgba(70, 183, 126);
-    color: #fff;
-    margin-left: 15px;
+  background-color: rgba(70, 183, 126);
+  color: #fff;
+  margin-left: 15px;
 }

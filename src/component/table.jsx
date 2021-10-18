@@ -21,7 +21,7 @@ export default class Table extends React.Component {
                     hobby: '跳舞、篮球、RAP'
                 }
             ],
-            isShow: false
+            isShow: false   /* 弹窗*/
         }
     }
     componentWillMount() {
