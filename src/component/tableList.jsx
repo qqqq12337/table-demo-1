@@ -18,7 +18,11 @@ export default class TableList extends React.Component {
     }
     //删除
     deleteItem = (id) => {
-
+        let list = JSON.parse(localStorage.getItem)
+        this.setState({
+            list:list
+        })
+     
     }
     render() {
         return <div className="table">

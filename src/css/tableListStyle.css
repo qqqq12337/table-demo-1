@@ -1,56 +1,56 @@
 body {
-    /* background-color: rgba(140, 140, 140); */
+  /* background-color: rgba(140, 140, 140); */
 }
 
 .table {
-    padding: 100px;
-    text-align: center;
+  padding: 100px;
+  text-align: center;
 }
 
 .add {
-    width: 70px;
-    height: 30px;
-    border: 1px solid #ccc;
-    color: #444;
-    line-height: 30px;
-    border-radius: 8px;
-    cursor: pointer;
+  width: 70px;
+  height: 30px;
+  border: 1px solid #ccc;
+  color: #444;
+  line-height: 30px;
+  border-radius: 8px;
+  cursor: pointer;
 }
 
 table {
-    width: 100%;
-    font-size: 11px;
-    color: #333333;
-    border-width: 1px;
-    border-color: #999999;
-    border-collapse: collapse;
-    margin-top: 20px;
+  width: 100%;
+  font-size: 11px;
+  color: #333333;
+  border-width: 1px;
+  border-color: #999999;
+  border-collapse: collapse;
+  margin-top: 20px;
 }
 
 table th {
-    background-color: rgba(203, 231, 234);
-    border-width: 1px;
-    padding: 8px;
-    border-style: solid;
-    border-color: #999999;
+  background-color: rgba(203, 231, 234);
+  border-width: 1px;
+  padding: 8px;
+  border-style: solid;
+  border-color: #999999;
 }
 
 table td {
-    border-width: 1px;
-    padding: 8px;
-    border-style: solid;
-    border-color: #999999;
+  border-width: 1px;
+  padding: 8px;
+  border-style: solid;
+  border-color: #999999;
 }
 
 .edit {
-    padding-right: 30px;
+  padding-right: 30px;
 }
 .mask {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    opacity:0.5;
-    background-color: rgba(140, 140, 140);
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  opacity: 0.5;
+  background-color: rgba(140, 140, 140);
 }
