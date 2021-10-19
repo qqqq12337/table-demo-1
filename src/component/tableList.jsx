@@ -17,8 +17,8 @@ export default class TableList extends React.Component {
         console.log(list)
     }
     //删除
-    deleteItem = (id) => {
-        console.log("item:" +id)
+    deleteItem(id){
+        console.log("子组件传进来的id:" +id)
         const currentList = this.state.list
         this.setState({
         list : currentList.filter((item) => item.id !==id)
@@ -48,7 +48,7 @@ export default class TableList extends React.Component {
                         <td>{item.hobby}</td>
                         <td>
                             <a href="#" className="edit" onClick={this.isShowForm.bind(that, item.id)}>编辑</a>
-                            <a href="#" onClick={this.deleteItem.bind(that, item.id)}>删除</a>
+                            <a href="#" onClick={() => this.props.onDeleteItem(item.id)}>删除</a>
                         </td>
                     </tr>
             },this)}

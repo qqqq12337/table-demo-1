@@ -1,7 +1,7 @@
 import React from 'react' 
 import TableList from './tableList'
 import AddForm from './addForm';
-import '../css/tableStyle.css'; 
+import '../css/tableStyle.css';
 
 export default class Table extends React.Component {
     constructor(props) {
@@ -24,6 +24,7 @@ export default class Table extends React.Component {
             isShow: false   /* 弹窗*/
         }
     }
+    
     componentWillMount() {
         this.getList();
     }
@@ -41,8 +42,12 @@ export default class Table extends React.Component {
     render() {
         return <div>
             <TableList getShow={this.showAdd}
-             infoList={this.state.list} 
+             infoList={this.state.list}
              showMask={this.state.isShow}></TableList>
+             <List
+            infoList={this.state.list}
+            onDeleteItem={this.deleteItem.bind(this)}
+            />
             <div className={this.state.isShow? "show": "hidden"}>
                  <AddForm getShow={this.showAdd} getData={this.getList}></AddForm>
             </div>
