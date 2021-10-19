@@ -5,25 +5,22 @@ export default class TableList extends React.Component {
     constructor(props) {
         super(props)
         this.state = {
+            type:"",
         }
         console.log(this.props)
     }
     isShowForm =() => {
         this.props.getShow(true)
+        this.setState({
+            type:'新增'
+        })
     }
     //编辑修改
     editInfo = (id) => {
         let list = JSON.parse(localStorage.getItem('info')||'[getList]');
         console.log(list)
     }
-    //删除
-    deleteItem(id){
-        console.log("子组件传进来的id:" +id)
-        const currentList = this.state.list
-        this.setState({
-        list : currentList.filter((item) => item.id !==id)
-        })
-    }
+
     render() {
         return <div className="table">
         <div className="add" onClick={this.isShowForm}>新增</div>

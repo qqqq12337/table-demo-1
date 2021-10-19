@@ -21,6 +21,7 @@ export default class Table extends React.Component {
                     hobby: '跳舞、篮球、RAP'
                 }
             ],
+            type:"",
             isShow: false   /* 弹窗*/
         }
     }
@@ -28,6 +29,16 @@ export default class Table extends React.Component {
     componentWillMount() {
         this.getList();
     }
+
+    //删除
+    deleteItem = (id) => {
+        console.log("子组件传进来的id:" +id)
+        const currentList = this.state.list
+        this.setState({
+        list : currentList.filter((item) => item.id !==id)
+        })
+    }
+
     getList =() => {
         let list = JSON.parse(localStorage.getItem('info')||'[]');
         this.setState({
@@ -43,11 +54,12 @@ export default class Table extends React.Component {
         return <div>
             <TableList getShow={this.showAdd}
              infoList={this.state.list}
-             showMask={this.state.isShow}></TableList>
-             <List
-            infoList={this.state.list}
-            onDeleteItem={this.deleteItem.bind(this)}
-            />
+             showMask={this.state.isShow}
+             infoList={this.state.list}
+            onDeleteItem={this.deleteItem}></TableList>
+             {/* <TableList
+            
+            /> */}
             <div className={this.state.isShow? "show": "hidden"}>
                  <AddForm getShow={this.showAdd} getData={this.getList}></AddForm>
             </div>
