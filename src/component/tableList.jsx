@@ -5,7 +5,6 @@ export default class TableList extends React.Component {
     constructor(props) {
         super(props)
         this.state = {
-            type:"",
         }
         console.log(this.props)
     }
@@ -15,7 +14,7 @@ export default class TableList extends React.Component {
             type:'新增'
         })
     }
-    //编辑修改
+     //编辑
     editInfo = (id) => {
         let list = JSON.parse(localStorage.getItem('info')||'[getList]');
         console.log(list)

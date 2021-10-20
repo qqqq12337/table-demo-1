@@ -30,7 +30,7 @@ export default class Table extends React.Component {
         this.getList();
     }
 
-    //删除
+    
     deleteItem = (id) => {
         console.log("子组件传进来的id:" +id)
         const currentList = this.state.list
@@ -57,9 +57,6 @@ export default class Table extends React.Component {
              showMask={this.state.isShow}
              infoList={this.state.list}
             onDeleteItem={this.deleteItem}></TableList>
-             {/* <TableList
-            
-            /> */}
             <div className={this.state.isShow? "show": "hidden"}>
                  <AddForm getShow={this.showAdd} getData={this.getList}></AddForm>
             </div>

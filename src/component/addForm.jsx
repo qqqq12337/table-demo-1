@@ -33,7 +33,7 @@ export default class AddForm extends React.Component {
     }
     render() {
         return  <div className="addForm">
-                    <div className="title"><span>{this.props.type}</span><span className="close" onClick={()=> {this.props.getShow(false)}}>×</span></div>
+                    <div className="title"><span>{this.props.type}</span><span className="close" onClick={()=> {this.props.getShow(false)}}>×</span>新增</div>
                     <div className="content">
                         <div><label>名称：<input type="text" id="name"/></label></div>
                         <div><label>年龄：<input type="text" id="age"/></label></div>
