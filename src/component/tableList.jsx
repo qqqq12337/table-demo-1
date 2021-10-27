@@ -4,20 +4,14 @@ import '../css/tableListStyle.css';
 export default class TableList extends React.Component {
     constructor(props) {
         super(props)
-        this.state = {
-        }
-        console.log(this.props)
     }
     isShowForm =() => {
-        this.props.getShow(true)
-        this.setState({
-            type:'新增'
-        })
+        this.props.getShow(true, 'add')
     }
-     //编辑
-    editInfo = (id) => {
-        let list = JSON.parse(localStorage.getItem('info')||'[getList]');
-        console.log(list)
+    //编辑修改
+    editInfo = (item) => {
+        console.log(item)
+        this.props.getShow(true, 'edit', item)
     }
 
     render() {
@@ -43,7 +37,7 @@ export default class TableList extends React.Component {
                         <td>{item.height}</td>
                         <td>{item.hobby}</td>
                         <td>
-                            <a href="#" className="edit" onClick={this.isShowForm.bind(that, item.id)}>编辑</a>
+                            <a href="#" className="edit" onClick={this.editInfo.bind(that, item)}>编辑</a>
                             <a href="#" onClick={() => this.props.onDeleteItem(item.id)}>删除</a>
                         </td>
                     </tr>
